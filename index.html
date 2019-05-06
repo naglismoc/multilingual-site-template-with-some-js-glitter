@@ -10,156 +10,179 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="sort" class="sort  ">
-        
-            <div id="sort_container" class="sort_container"> 
-                <div id="visa_paieska"> 
-                    <label for="paieskos_langas">Paieškos langas</label>
-                    <input id="paieskos_langas" type="text">
-                    <div id="paieskos_buble">
-                        <div>
-                            <p>Konkretaus paslaugos teikėjo paiešką galite vykdyti pagal:</p>
-                            <p>•firmos pavadinimą ar savininko vardą pavardę,</p>
-                            <p>•telefono numerį,</p>
-                            <p>•pašto adresą,</p>
-                            <p>•vietos adresą.</p>
-                        </div> 
-                    </div>
+    <div id="sort" class="sort">
+        <div id="sort_container" class="sort_container"> 
+            <div id="full_search"> 
+                <label for="search_input">Paieškos langas</label>
+                <input id="search_input" type="text">
+                <div id="search_bubble">
+                    <div>
+                        <p>Konkretaus paslaugos teikėjo paiešką galite vykdyti pagal:</p>
+                        <p>•firmos pavadinimą ar savininko vardą pavardę,</p>
+                        <p>•telefono numerį,</p>
+                        <p>•pašto adresą,</p>
+                        <p>•vietos adresą.</p>
+                    </div> 
                 </div>
-                <div class="upe_select" >
-                    <select>
-                        <option value="0">Kokia upe noriu plaukti?</option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                        <option value="4">Ford</option>
-                        <option value="5">Honda</option>
-                    </select>
+            </div>
+            <div class="river_select" >
+                <select>
+                    <option value="0">Kokia upe noriu plaukti?</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                </select>
+            </div>
+            <div class="dificulty" >
+                <select>
+                    <option value="0"> Upės sudėtingumas</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                </select>
+            </div>
+            <div class="trip_length" >
+                <select>
+                    <option value="0">kiek dienu plauksiu?</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                </select>
+            </div>
+            <div class="overnight" >
+                <select>
+                    <option value="0">Nakvosiu:</option>
+                    <option value="1">Namelyje</option>
+                    <option value="2">Nemokamoje sovyklavietėje</option>
+                    <option value="3">mokamoje sovyklavietėje</option>
+                </select>
+            </div>
+            <!-- sitas divas zemiau esantis apjungia grupę, kad išeitų paslėpti visą turinį. -->
+            <div> 
+                <input type="checkbox"> Noriu pakeliui parduotuvės<br>
+                <div>
+                Mašinos parkavimas:
                 </div>
-                <div class="sudėtingumas" >
-                        <select>
-                            <option value="0"> Upės sudėtingumas</option>
-                            <option value="1">Audi</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Citroen</option>
-                            <option value="4">Ford</option>
-                            <option value="5">Honda</option>
-                        </select>
-                    </div>
-                <div class="kiek_dienu_plauksite" >
-                        <select>
-                            <option value="0">kiek dienu plauksiu?</option>
-                            <option value="1">Audi</option>
-                            <option value="2">BMW</option>
-                            <option value="3">Citroen</option>
-                            <option value="4">Ford</option>
-                            <option value="5">Honda</option>
-                        </select>
-                </div>
-                <div class="Nakvosiu" >
-                        <select>
-                            <option value="0">Nakvosiu:</option>
-                            <option value="1">Namelyje</option>
-                            <option value="2">Nemokamoje sovyklavietėje</option>
-                            <option value="3">mokamoje sovyklavietėje</option>
-                        </select>
-                </div>
-                <!-- sitas divas zemiau esantis apjungia grupę, kad išeitų paslėpti visą turinį. -->
-                <div> 
-                <input type="checkbox" > Noriu pakeliui parduotuvės<br>
-                <div>Mašinos parkavimas:</div>
-                <!-- turi selectintis vienas, uždėti aiškinamąjį buble ką tai reiškia -->
+            <!-- turi selectintis vienas, uždėti aiškinamąjį buble ką tai reiškia -->
                 <input type="radio"> Plauksiu nuo mašinos<br>
                 <input type="radio"> Plauksiu link mašinos
                 <!-- kiek mūsų plauks ir kelevietėse baidarėse
                 more of a stage two. galima kelevietes įdėti.
                 gal norės 3se plaukti vienvietėse -->
-                <div>aš dar noriu:</div>
-                
-                    <input type="checkbox" > Patogaus kranto dažniems sustojimams<br>
-                    <input type="checkbox" > Galimybės prailginti plaukimo trukmę jo metu<br>
-                    <input type="checkbox" > Pamatyti įžymių vietų, lankytinų objektų.<br>
+                <div>
+                    aš dar noriu:
                 </div>
+                <input type="checkbox" > Patogaus kranto dažniems sustojimams<br>
+                <input type="checkbox" > Galimybės prailginti plaukimo trukmę jo metu<br>
+                <input type="checkbox" > Pamatyti įžymių vietų, lankytinų objektų.<br>
             </div>
+        </div>
     </div>
 
     <header>
-        <div id="logo" class="menu_logo" onclick="homepage()">logo</div>
+        <div id="logo" class="menu_logo" onclick="homepage()">
+            logo
+        </div>
         <menu>
-            <div onclick="menu_mygtukai_naujienos()"> <p>Naujienos</p> </div>
-            <div onclick="menu_mygtukai_apie_mus()"> <p>apie mus</p> </div>
-            <div onclick="menu_mygtukai_kontaktai()"> <p>kontaktai</p> </div>
+            <div onclick="menu_button_news()">
+                <p>Naujienos</p>
+            </div>
+            <div onclick="menu_button_about()">
+                <p>apie mus</p>
+            </div>
+            <div onclick="menu_button_contacts()">
+                <p>kontaktai</p>
+            </div>
         </menu>
     </header>
 
     <div id="hero" class="hero hero_active">
-        <div id="hero_mygtukas" class="hero_mygtukas hero_mygtukas_active" onclick="sort_active()"> <p> Iširinkite maršrutą</p></div>
+        <div id="hero_button" class="hero_button hero_button_active" onclick="sort_active()">
+            <p> Išsirinkite maršrutą</p>
+        </div>
     </div>
-        <div id="content" class="content content_large">
-           <div class=" content_container"> 
+    <div id="content" class="content content_large">
+        <div class=" content_container">
 
-
-               <div id="card" class="card card_hidden">
-                    <div class="card_content">
-                        <div class="card_left">
-                            <div class="card_pro_foto">foto</div>
-                            <div class="card_susisiekti">susisiekti
-                            </div>
+            <div id="card" class="card card_hidden">
+                <div class="card_content">
+                    <div class="card_left">
+                        <div class="card_profile_photo">
+                            foto
                         </div>
-
-                        <div class="card_mid">
-                            <div class="card_name">petras</div>
-                            <div class="card_weather">šalta</div>
-                            <div class="card_summary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, officia corporis assumenda ducimus accusantium molestias, fuga ut doloremque asperiores eos debitis neque eveniet maxime eius consequatur ea sunt quibusdam? Impedit?</div>
-                            <div class="card_thumbnails_frame">
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                <div class="card_thumbnails"></div>
-                                </div>
+                        <div class="card_reach_out">
+                            susisiekti
                         </div>
-                        
-                        <div class="card_right"> upės žemėlapis
+                    </div>
+                    <div class="card_mid">
+                        <div class="card_name">
+                            petras
                         </div>
-                        <div class="see_more"><div class="see_more_btn">See more</div></div>
-                     </div>
-               </div>
-
-               <div id="naujienos" class="naujienos">
-                   <h1>Naujienos
-                   </h1> 
-                   <div class="naujienu_turinys">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi esse dolore recusandae porro? Doloribus facilis, eaque dolorem non dolores dolorum eveniet, optio voluptate beatae deleniti magnam autem perferendis consequuntur distinctio?
-                   Praesentium nulla placeat sit aspernatur voluptate velit beatae modi magni quibusdam aliquid explicabo et veniam, natus voluptatem repellendus optio iusto architecto quo rerum libero doloribus sed quia. Facilis, quas eaque!
-                   Quasi explicabo dicta ad rem nobis ut, magni facilis aliquid voluptatem labore, blanditiis iusto aut qui neque similique excepturi doloremque impedit sapiente dignissimos totam quibusdam, pariatur voluptate molestiae reprehenderit? Est.
-                   Excepturi error molestiae quidem ea iusto, delectus ipsum quod sed molestias ut! Dolore laborum corrupti molestias quas maxime deserunt. Quae atque temporibus incidunt quam at dignissimos commodi asperiores soluta vel?
-                   Dignissimos, repellat ut qui, quidem nulla repellendus earum iure dolorem rem ducimus distinctio porro magnam necessitatibus provident culpa deleniti alias. Deleniti, unde tempora eos magni omnis praesentium veritatis amet voluptatum?</div>
-                </div>
-                <div id="apie_mus" class="apie_mus apie_mus_hidden">
-                    <h1>Apie mus
-                    </h1> 
-                    <div class="apie_mus_turinys">Mes tokie ir anokie.</div>
-                </div>
-                <div id="kontaktai" class="kontaktai kontaktai_hidden">
-                    <h1>Kontaktai
-                    </h1> 
-                    <div class="kontaktai_turinys">Ardesas:<br>
-                        Mobilus numeris: <br>
-                        Pašto adreas
+                        <div class="card_weather">
+                            šalta
+                        </div>
+                        <div class="card_summary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore sed molestiae incidunt? Cupiditate molestias fugit ducimus minus vero quam repellat expedita voluptas ut totam? Explicabo porro soluta quos in.Consectetur voluptas laboriosam, minima molestiae error laborum ea alias est a iure ipsam quisquam nemo ad iste, libero beatae quaerat vero, nihil obcaecati. Minima ipsum cupiditate fugit consectetur suscipit qui?
+                        </div>
+                        <div class="card_thumbnails_frame">
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                            <div class="card_thumbnails"></div>
+                        </div>
+                    </div>   
+                    <div class="card_right">
+                        upės žemėlapis
+                    </div>
+                    <div class="see_more">
+                        <div class="see_more_btn">
+                            See more
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div id="news" class="news">
+                <h1>
+                    Naujienos
+                </h1> 
+                <div class="news_content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi esse dolore recusandae porro? Doloribus facilis, eaque dolorem non dolores dolorum eveniet, optio voluptate beatae deleniti magnam autem perferendis consequuntur distinctio?
+                    Praesentium nulla placeat sit aspernatur voluptate velit beatae modi magni quibusdam aliquid explicabo et veniam, natus voluptatem repellendus optio iusto architecto quo rerum libero doloribus sed quia. Facilis, quas eaque!
+                    Quasi explicabo dicta ad rem nobis ut, magni facilis aliquid voluptatem labore, blanditiis iusto aut qui neque similique excepturi doloremque impedit sapiente dignissimos totam quibusdam, pariatur voluptate molestiae reprehenderit? Est.
+                    Excepturi error molestiae quidem ea iusto, delectus ipsum quod sed molestias ut! Dolore laborum corrupti molestias quas maxime deserunt. Quae atque temporibus incidunt quam at dignissimos commodi asperiores soluta vel?
+                    Dignissimos, repellat ut qui, quidem nulla repellendus earum iure dolorem rem ducimus distinctio porro magnam necessitatibus provident culpa deleniti alias. Deleniti, unde tempora eos magni omnis praesentium veritatis amet voluptatum?
+                </div>
+            </div>
+            <div id="about" class="about about_hidden">
+                <h1>
+                    Apie mus
+                </h1> 
+                <div class="about_conent">Mes tokie ir anokie.
 
-
-
-
-        
-        
-           </div>
+                </div>
+            </div>
+            <div id="contact" class="contact contact_hidden">
+                <h1>
+                    Kontaktai
+                </h1> 
+                <div class="contact_content">Ardesas:<br>
+                    Mobilus numeris: <br>
+                    Pašto adreas
+                </div>
+            </div>
         </div>
+    </div>
    
 
 

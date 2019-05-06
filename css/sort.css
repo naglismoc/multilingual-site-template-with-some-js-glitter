@@ -1,4 +1,4 @@
-.sort{
+.sort {
     display: inline-block;
     float: left;
     width:0;
@@ -8,45 +8,44 @@
     top: 0;
 }
 
-.sort_active{
-    width:200px;
-    transition: width 0.5s;
-    transition-timing-function: ease-in-out;
-}
-.sort_hidden{
-    width:0;
-    transition: width 0.5s;   
-    transition-timing-function: ease-in-out;
-}
-.sort_container{
-  visibility: hidden; 
-  margin: 50px 10px; 
-}
-.sort_container_hidden{
-
-visibility: hidden; 
-}
-.sort_container_active{
-    transition-delay: 0.7s;
-visibility: visible; 
-}
-#visa_paieska:hover>#paieskos_buble{
+    .sort_active {
+        width:200px;
+        transition: width 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+    .sort_hidden {
+        width:0;
+        transition: width 0.5s;   
+        transition-timing-function: ease-in-out;
+    }
+    .sort_container {
+        visibility: hidden; 
+        margin: 50px 10px; 
+    }
+    .sort_container_hidden {
+        visibility: hidden; 
+    }
+    .sort_container_active {
+        transition-delay: 0.7s;
+        visibility: visible; 
+    }
+#full_search:hover > #search_bubble {
     visibility: visible;
 }
-#paieskos_langas{
+#search_input {
     width:80%;
 }
-#paieskos_buble{
+#search_bubble {
     visibility: hidden;
     width: 220px;
-   border-radius: 20px;
+    border-radius: 20px;
     background-color: seashell;
     position: absolute;
     z-index: 1;
     top: 100px;
     left:100px;
 }
-#paieskos_buble>div{
-margin:20px;
-font-weight: 700;
+#search_bubble > div {
+    margin:20px;
+    font-weight: 700;
 }
