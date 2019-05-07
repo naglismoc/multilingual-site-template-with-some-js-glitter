@@ -13,10 +13,11 @@
     <div id="sort" class="sort">
         <div id="sort_container" class="sort_container"> 
             <div id="full_search"> 
-                <label for="search_input">Paieškos langas</label>
+                <label id="search_input" for="search_input">Paieškos langas</label>
                 <input id="search_input" type="text">
                 <div id="search_bubble">
-                    <div>
+                    <div> 
+                        <!-- sita reikia sukalbinti arba padaryti kitoki ir tada(sukalbinti) -->
                         <p>Konkretaus paslaugos teikėjo paiešką galite vykdyti pagal:</p>
                         <p>•firmos pavadinimą ar savininko vardą pavardę,</p>
                         <p>•telefono numerį,</p>
@@ -27,12 +28,12 @@
             </div>
             <div class="river_select" >
                 <select>
-                    <option value="0">Kokia upe noriu plaukti?</option>
-                    <option value="1">Audi</option>
-                    <option value="2">BMW</option>
-                    <option value="3">Citroen</option>
-                    <option value="4">Ford</option>
-                    <option value="5">Honda</option>
+                    <option id="river_select_0" value="0">Kokia upe noriu plaukti?</option>
+                    <option id="river_select_1" value="1">Audi</option>
+                    <option id="river_select_2" value="2">BMW</option>
+                    <option id="river_select_3" value="3">Citroen</option>
+                    <option id="river_select_4" value="4">Ford</option>
+                    <option id="river_select_5" value="5">Honda</option>
                 </select>
             </div>
             <div class="dificulty" >
@@ -90,13 +91,19 @@
             logo
         </div>
         <menu>
-            <div onclick="menu_button_news()">
+                <select id="language" onChange="language(siteData,sortData)">
+                        <option value="lietuviu">Lt</option>
+                        <option value="anglu">En</option>
+                        <option value="rusu">Ru</option>  
+                </select>
+            
+            <div id="menu_button_news" onclick="menu_button_news()">
                 <p>Naujienos</p>
             </div>
-            <div onclick="menu_button_about()">
+            <div id="menu_button_about" onclick="menu_button_about()">
                 <p>apie mus</p>
             </div>
-            <div onclick="menu_button_contacts()">
+            <div id="menu_button_contacts" onclick="menu_button_contacts()">
                 <p>kontaktai</p>
             </div>
         </menu>
@@ -104,7 +111,7 @@
 
     <div id="hero" class="hero hero_active">
         <div id="hero_button" class="hero_button hero_button_active" onclick="sort_active()">
-            <p> Išsirinkite maršrutą</p>
+            <p id="hero_button_p"> Išsirinkite maršrutą</p>
         </div>
     </div>
     <div id="content" class="content content_large">
@@ -153,10 +160,10 @@
                 </div>
             </div>
             <div id="news" class="news">
-                <h1>
+                <h1 id="news_h1">
                     Naujienos
                 </h1> 
-                <div class="news_content">
+                <div id="news_content" class="news_content">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi esse dolore recusandae porro? Doloribus facilis, eaque dolorem non dolores dolorum eveniet, optio voluptate beatae deleniti magnam autem perferendis consequuntur distinctio?
                     Praesentium nulla placeat sit aspernatur voluptate velit beatae modi magni quibusdam aliquid explicabo et veniam, natus voluptatem repellendus optio iusto architecto quo rerum libero doloribus sed quia. Facilis, quas eaque!
                     Quasi explicabo dicta ad rem nobis ut, magni facilis aliquid voluptatem labore, blanditiis iusto aut qui neque similique excepturi doloremque impedit sapiente dignissimos totam quibusdam, pariatur voluptate molestiae reprehenderit? Est.
@@ -165,20 +172,19 @@
                 </div>
             </div>
             <div id="about" class="about about_hidden">
-                <h1>
+                <h1 id="about_h1">
                     Apie mus
                 </h1> 
-                <div class="about_conent">Mes tokie ir anokie.
+                <div id="about_conent" class="about_conent">Mes tokie ir anokie.
 
                 </div>
             </div>
             <div id="contact" class="contact contact_hidden">
-                <h1>
+                <h1 id="contact_h1">
                     Kontaktai
                 </h1> 
-                <div class="contact_content">Ardesas:<br>
-                    Mobilus numeris: <br>
-                    Pašto adreas
+                <div id="contact_content" class="contact_content"> 
+                    Mobilus numeris: 
                 </div>
             </div>
         </div>
@@ -192,6 +198,8 @@
 <!-- <script src="js/data.js"></script> -->
 <script src="js/jQuery.js"></script>
 <script src="js/function.js"></script>
+<script src="js/siteData.js"></script>
+<script src="js/language.js"></script>
 <!-- <script src="js/actions.js"></script> -->
 </div>
 </body>
