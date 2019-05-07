@@ -86,7 +86,18 @@ sortData= {
     }
 }
 
-
+showData= {
+    see_more_btn:{  
+        lietuviu:"Matyti daugiau",
+        anglu:"See more",
+        rusu:"See more rusiskai"
+    },
+    see_more_btn2:{  
+        lietuviu:"Suskleisti",
+        anglu:"See less",
+        rusu:"See less rusiskai"
+    }
+}
 
 
 

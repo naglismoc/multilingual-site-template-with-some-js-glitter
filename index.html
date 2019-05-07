@@ -91,7 +91,7 @@
             logo
         </div>
         <menu>
-                <select id="language" onChange="language(siteData,sortData)">
+                <select id="language" onChange="language_change(siteData,sortData,showData,language)">
                         <option value="lietuviu">Lt</option>
                         <option value="anglu">En</option>
                         <option value="rusu">Ru</option>  
@@ -117,7 +117,7 @@
     <div id="content" class="content content_large">
         <div class=" content_container">
 
-            <div id="card" class="card card_hidden">
+            <div id="card" class="card card_hidden card_slim">
                 <div class="card_content">
                     <div class="card_left">
                         <div class="card_profile_photo">
@@ -152,9 +152,15 @@
                     <div class="card_right">
                         upės žemėlapis
                     </div>
-                    <div class="see_more">
-                        <div class="see_more_btn">
-                            See more
+                    <div class="see_more" >
+                      
+                        <div id="card_bottom" class="card_bottom_hidden">
+                            <div id="card_bottom_content" class="card_bottom_content_hidden">
+                                cia kortos daugiau
+                            </div>
+                            <div id="see_more_btn" class="see_more_btn" onclick="see_more(showData)">
+                                    See more
+                                </div>
                         </div>
                     </div>
                 </div>
