@@ -123,8 +123,9 @@
                         <div class="card_profile_photo">
                             foto
                         </div>
-                        <div class="card_reach_out">
-                            susisiekti
+                        <div id="card_reach_out" class="card_reach_out" onclick="card_reach_out_function()" >
+                           <div id="card_reach_out_btn">susisiekti</div> 
+                           
                         </div>
                     </div>
                     <div class="card_mid">
@@ -156,7 +157,15 @@
                       
                         <div id="card_bottom" class="card_bottom_hidden">
                             <div id="card_bottom_content" class="card_bottom_content_hidden">
-                                cia kortos daugiau
+                                <div id="card_bottom_left">
+                                    <div id="our_advices">Mūsų patarimai:</div> 
+                                </div>
+                                <div id="card_bottom_mid">
+                                    <div id="river_specifications"></div>
+                                </div>
+                                <div id="card_bottom_right">
+
+                                </div>
                             </div>
                             <div id="see_more_btn" class="see_more_btn" onclick="see_more(showData)">
                                     See more
@@ -205,6 +214,7 @@
 <script src="js/jQuery.js"></script>
 <script src="js/function.js"></script>
 <script src="js/siteData.js"></script>
+<script src="js/card_template.js"></script>
 <script src="js/language.js"></script>
 <!-- <script src="js/actions.js"></script> -->
 </div>
