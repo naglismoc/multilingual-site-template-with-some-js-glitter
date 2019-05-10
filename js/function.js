@@ -48,7 +48,7 @@ function menu_button_news() {
     contact.classList.add("contact_hidden");
 }
 function sort_active() {
-   console.log("hi");
+   
    
     sort.classList.add("sort_active");
     sort.classList.remove("sort_hidden");
@@ -64,6 +64,7 @@ function sort_active() {
     card.classList.remove("card_hidden");
     about.classList.add("about_hidden");
     contact.classList.add("contact_hidden");
+    language_show(showData,language);
 }
 function homepage() {
     sort.classList.remove("sort_active");
